@@ -1,0 +1,29 @@
+// stripper by 兎RB 25.01.05
+// map ze_grau_p
+// workshop id 3246171131
+{
+	"modify": // change maxspeed value
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]st3_boss_a8_rot1"
+            },
+            "replace":
+            {
+                "MaxSpeed": "100"
+            }
+        },
+        
+        {
+            "match":
+            {
+                "targetname": "[PR#]st3_boss_a8_rot2"
+            },
+            "replace":
+            {
+                "MaxSpeed": "100"
+            }
+        }
+    ]
+}

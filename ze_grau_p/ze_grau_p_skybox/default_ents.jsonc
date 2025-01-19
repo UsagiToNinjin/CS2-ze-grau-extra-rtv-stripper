@@ -1,0 +1,18 @@
+// stripper by 兎RB 25.01.19
+// map ze_grau_p
+// workshop id 3246171131
+{
+	"modify": // change max value 4 >> 7
+    [ 
+        {
+            "match":
+            {
+                "targetname": "[PR#]levelcounter"
+            },
+            "replace":
+            {
+                "max": "7"
+            }
+        }
+    ]
+}
