@@ -1,0 +1,24 @@
+    grau.seraphim = 
+    {
+        type = "csgo_music"
+        volume = 1.000000
+        volume_convar = "snd_musicvolume"
+        vsnd_files = "sounds/grau/seraphim.vsnd"
+        vsnd_duration = 241.001450
+    }
+    grau.neutron_reaper = 
+    {
+        type = "csgo_music"
+        volume = 1.000000
+        volume_convar = "snd_musicvolume"
+        vsnd_files = "sounds/grau/neutron_reaper.vsnd"
+        vsnd_duration = 137.183487
+    }
+    grau.cosmic_railroad = 
+    {
+        type = "csgo_music"
+        volume = 1.000000
+        volume_convar = "snd_musicvolume"
+        vsnd_files = "sounds/grau/cosmic_railroad.vsnd"
+        vsnd_duration = 137.183487
+    }
