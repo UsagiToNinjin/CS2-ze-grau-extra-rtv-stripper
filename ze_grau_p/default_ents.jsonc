@@ -258,7 +258,6 @@
                     "timestofire": -1
                 },
 
-
                 {
                     "outputname": "OnTrigger",
                     "targetname": "rtv_fys_trigger",
@@ -317,7 +316,7 @@
                     "timestofire": -1
                 },
 
-			    {
+		{
                     "outputname": "OnTrigger",
                     "targetname": "rtv_rot_temp_1",
                     "inputname": "ForceSpawn",
@@ -6220,10 +6219,10 @@
         {
             "targetname": "admin_rtv_z",
             "classname": "func_button",
-		    "origin": "500 -60 -2016",
+	    "origin": "500 -60 -2016",
             "angles": "0 0 0",
             "scales": "1 1 1",
-			"fadescale": "1",
+	    "fadescale": "1",
             "spawnflags": "1025",
             "wait": "3",
             "speed": "5",
@@ -6231,7 +6230,7 @@
             "renderamt": "255",
             "model": "maps/ze_grau_p/entities/admin_rtv_4092.vmdl",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnPressed",
                     "targetname": "levelcounter",
@@ -6260,7 +6259,7 @@
             "origin": "500 -20 -1980",
             "angles": "0 270 90",
             "scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "depth_render_offset": "0.125",
             "font_name": "Unispace",
             "font_size": "128",
             "world_units_per_pixel": "0.25",
@@ -6268,7 +6267,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "RTV Z",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -6278,10 +6277,10 @@
     "add": // stage rtv z
     [ 
         {
-			"targetname": "admin_z",
+	    "targetname": "admin_z",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "rtv_timer",
@@ -6395,16 +6394,16 @@
                     "delay": 19.0,
                     "timestofire": -1
                 }
-			]
+	    ]
         }
     ],
     "add": // stage rtv z
     [ 
         {
-			"targetname": "rtv_z_trigger",
+	    "targetname": "rtv_z_trigger",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "rtv_z_bgm",
@@ -7760,13 +7759,13 @@
     "add": // stage rtv z custom attack
     [ 
         {
-			"targetname": "rtv_z_boss_a8_rot_default_timer",
+	    "targetname": "rtv_z_boss_a8_rot_default_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "0.01",
             "io":
-			[	
-				{
+	    [	
+		{
                     "outputname": "OnTimer",
                     "targetname": "st3_boss_a8_rot*",
                     "inputname": "SetSpeed",
@@ -7778,10 +7777,10 @@
         },
 
         {
-			"targetname": "rtv_z1_a9_start",
+	    "targetname": "rtv_z1_a9_start",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "st3_boss_a9_move_side",
@@ -7920,44 +7919,44 @@
         },
 
         {
-			"targetname": "rtv_z_beam_trigger",
+	    "targetname": "rtv_z_beam_trigger",
             "classname": "logic_relay",
             "io":
-			[	
-				{
-					"outputname": "OnTrigger",
-					"targetname": "rtv_hurt_1*",
-					"inputname": "SetDamage",
+	    [	
+		{
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_hurt_1*",
+		    "inputname": "SetDamage",
                     "overrideparam": "60",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_hurt_1*",
-					"inputname": "SetDamage",
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_hurt_1*",
+		    "inputname": "SetDamage",
                     "overrideparam": "30",
-					"delay": 1.26,
-					"timestofire": -1
-				},
+		    "delay": 1.26,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_hurt_1*",
-					"inputname": "SetDamage",
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_hurt_1*",
+		    "inputname": "SetDamage",
                     "overrideparam": "10",
-					"delay": 3.26,
-					"timestofire": -1
-				},
+		    "delay": 3.26,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_hurt_1*",
-					"inputname": "Enable",
-					"delay": 0.01,
-					"timestofire": -1
-				},
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_hurt_1*",
+		    "inputname": "Enable",
+		    "delay": 0.01,
+		    "timestofire": -1
+		},
 
                 {
                     "outputname": "OnTrigger",
@@ -8133,7 +8132,7 @@
         },
 
         {
-			"targetname": "rtv_z_a9_modify_timer",
+	   "targetname": "rtv_z_a9_modify_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "0.01",
@@ -8151,57 +8150,57 @@
         },
 
         {
-			"targetname": "rtv_z_slim_laser_timer",
+	    "targetname": "rtv_z_slim_laser_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "0.75",
             "io":
-			[	
-				{
-					"outputname": "OnTimer",
-					"targetname": "rtv_z_slim_laser_case",
-					"inputname": "PickRandom",
-					"delay": 0.0,
-					"timestofire": -1
-				}
+	    [	
+		{
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_z_slim_laser_case",
+		    "inputname": "PickRandom",
+		    "delay": 0.0,
+		    "timestofire": -1
+		}
             ]
         },
 
         {
-			"targetname": "rtv_z_slim_laser_case",
+            "targetname": "rtv_z_slim_laser_case",
             "classname": "logic_case",
             "io":
-			[	
-				{
-					"outputname": "OnCase01",
-					"targetname": "rtv_slim_maker1",
-					"inputname": "ForceSpawn",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+	    [	
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "rtv_slim_maker1",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnCase02",
-					"targetname": "rtv_slim_maker2",
-					"inputname": "ForceSpawn",
-					"delay": 0.0,
-					"timestofire": -1
-				}
+		    "outputname": "OnCase02",
+		    "targetname": "rtv_slim_maker2",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.0,
+		    "timestofire": -1
+		}
             ]
         },
 
         {
-			"targetname": "rtv_z_a7_case",
+	    "targetname": "rtv_z_a7_case",
             "classname": "logic_case",
             "io":
-			[	
-				{
-					"outputname": "OnCase01",
-					"targetname": "st3_boss_tele_1",
-					"inputname": "Teleport",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+	    [	
+		{
+		    "outputname": "OnCase01",
+		    "targetname": "st3_boss_tele_1",
+		    "inputname": "Teleport",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
                 {
 					"outputname": "OnCase01",
@@ -8210,7 +8209,7 @@
                     "overrideparam": "1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
                 
                 {
 					"outputname": "OnCase01",
@@ -8219,7 +8218,7 @@
                     "overrideparam": "st3_boss_ta_1",
 					"delay": 0.1,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase01",
@@ -8227,7 +8226,7 @@
 					"inputname": "Enable",
 					"delay": 0.2,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase01",
@@ -8236,7 +8235,7 @@
                     "overrideparam": "st3_boss_a7_tt",
 					"delay": 0.3,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase02",
@@ -8244,7 +8243,7 @@
 					"inputname": "Teleport",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase02",
@@ -8253,7 +8252,7 @@
                     "overrideparam": "1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase02",
@@ -8262,7 +8261,7 @@
                     "overrideparam": "st3_boss_ta_2",
 					"delay": 0.1,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase02",
@@ -8270,7 +8269,7 @@
 					"inputname": "Enable",
 					"delay": 0.2,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase02",
@@ -8279,7 +8278,7 @@
                     "overrideparam": "st3_boss_a7_tt",
 					"delay": 0.3,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase03",
@@ -8287,7 +8286,7 @@
 					"inputname": "Teleport",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase03",
@@ -8296,7 +8295,7 @@
                     "overrideparam": "1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase03",
@@ -8305,7 +8304,7 @@
                     "overrideparam": "st3_boss_ta_3",
 					"delay": 0.1,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase03",
@@ -8313,7 +8312,7 @@
 					"inputname": "Enable",
 					"delay": 0.2,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase03",
@@ -8322,7 +8321,7 @@
                     "overrideparam": "st3_boss_a7_tt",
 					"delay": 0.3,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase04",
@@ -8330,7 +8329,7 @@
 					"inputname": "Teleport",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase04",
@@ -8339,7 +8338,7 @@
                     "overrideparam": "1",
 					"delay": 0.0,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase04",
@@ -8348,7 +8347,7 @@
                     "overrideparam": "st3_boss_ta_4",
 					"delay": 0.1,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase04",
@@ -8356,7 +8355,7 @@
 					"inputname": "Enable",
 					"delay": 0.2,
 					"timestofire": -1
-				},
+		},
 
                 {
 					"outputname": "OnCase04",
@@ -8365,7 +8364,7 @@
                     "overrideparam": "st3_boss_a7_tt",
 					"delay": 0.3,
 					"timestofire": -1
-				}
+		}
             ]
         }
     ],            
