@@ -4,7 +4,7 @@
 // have to add music,soundvents in server pack(vpk)
 // extra stage only admin
 {
-	"modify": // stripper update log
+    "modify": // stripper update log
     [ 
         {
             "match":
@@ -16,16 +16,16 @@
                 "io":
                 [	
                     {
-						"outputname": "OnMapSpawn",
-						"targetname": "sc",
+			"outputname": "OnMapSpawn",
+			"targetname": "sc",
                         "inputname": "Command",
                         "overrideparam": "say stripper update 25.01.19",
                         "delay": 1.0,
                         "timestofire": -1
-					}				
-				]
-			}        
-		}
+		    }				
+		]
+	   }        
+	}
     ],
     "modify": // add extra stage
     [ 
@@ -45,42 +45,42 @@
                 "io":
                 [	
                     {
-						"outputname": "OnCase05",
-						"targetname": "admin_fys",
+			"outputname": "OnCase05",
+			"targetname": "admin_fys",
                         "inputname": "Trigger",
                         "delay": 0.0,
                         "timestofire": -1
-					},
+		    },
                     
                     {
-						"outputname": "OnCase06",
-						"targetname": "admin_a",
+			"outputname": "OnCase06",
+			"targetname": "admin_a",
                         "inputname": "Trigger",
                         "delay": 0.0,
                         "timestofire": -1
-					},
+		    },
 
                     {
-						"outputname": "OnCase07",
-						"targetname": "admin_z",
+			"outputname": "OnCase07",
+			"targetname": "admin_z",
                         "inputname": "Trigger",
                         "delay": 0.0,
                         "timestofire": -1
-					}
-				]
-			}        
-		}
+		    }
+	        ]
+	    }        
+        }
     ],                
     "add": // 373#entityLumpName(st3_boss_a8_temp) maxspeed set default value 
     [ 
         {
-			"targetname": "boss_a8_rot_default_timer",
+	    "targetname": "boss_a8_rot_default_timer",
             "classname": "logic_timer",
             "startdisabled": "0",
             "refiretime": "0.01",
             "io":
-			[	
-				{
+	    [	
+		{
                     "outputname": "OnTimer",
                     "targetname": "st3_boss_a8_rot1",
                     "inputname": "SetSpeed",
@@ -108,8 +108,8 @@
             "startdisabled": "1",
             "refiretime": "0.01",
             "io":
-			[	
-				{
+	    [	
+		{
                     "outputname": "OnTimer",
                     "targetname": "weapon_healthshot",
                     "inputname": "Kill",
@@ -122,7 +122,7 @@
     "add": // stage extra health
     [ 
         {
-			"targetname": "rtv_hp_trigger",
+	    "targetname": "rtv_hp_trigger",
             "classname": "trigger_multiple",
             "origin": "-5744 -10776 -11200",
             "angles": "0 0 0",
@@ -138,10 +138,10 @@
         {
             "targetname": "admin_rtv_fys",
             "classname": "func_button",
-		    "origin": "500 340 -2016",
+	    "origin": "500 340 -2016",
             "angles": "0 0 0",
             "scales": "1 1 1",
-			"fadescale": "1",
+	    "fadescale": "1",
             "spawnflags": "1025",
             "wait": "3",
             "speed": "5",
@@ -149,7 +149,7 @@
             "renderamt": "255",
             "model": "maps/ze_grau_p/entities/admin_rtv_4092.vmdl",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnPressed",
                     "targetname": "levelcounter",
@@ -178,7 +178,7 @@
             "origin": "500 400 -1980",
             "angles": "0 270 90",
             "scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "depth_render_offset": "0.125",
             "font_name": "Unispace",
             "font_size": "128",
             "world_units_per_pixel": "0.25",
@@ -186,7 +186,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "RTV FYS",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -196,10 +196,10 @@
     "add": // stage rtv fys teleport trigger
     [ 
         {
-			"targetname": "admin_fys",
+	    "targetname": "admin_fys",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "text_music_fys_relay",
@@ -266,16 +266,16 @@
                     "delay": 8.0,
                     "timestofire": -1
                 }
-			]
+	    ]
         }
     ],
     "add": // stage rtv fys
     [ 
         {
-			"targetname": "rtv_fys_trigger",
+	    "targetname": "rtv_fys_trigger",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "rtv_fys_bgm",
@@ -1601,47 +1601,47 @@
                 },
 
                 {
-					"outputname": "OnTrigger",
-					"targetname": "zr_toggle_respawn",
-					"inputname": "Disable",
-					"delay": 238.9,
-					"timestofire": -1
-				}
+		    "outputname": "OnTrigger",
+		    "targetname": "zr_toggle_respawn",
+		    "inputname": "Disable",
+		    "delay": 238.9,
+		    "timestofire": -1
+		}
             ]
         }
     ],
     "add": // stage rtv fys custom attack
     [ 
         {
-			"targetname": "rtv_fys_beam_timer",
+	    "targetname": "rtv_fys_beam_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "2.6",
             "io":
-			[	
-				{
-					"outputname": "OnTimer",
-					"targetname": "rtv_maker_*",
-					"inputname": "ForceSpawn",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+	    [	
+		{
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_maker_*",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "rtv_maker_*",
-					"inputname": "ForceSpawn",
-					"delay": 0.3,
-					"timestofire": -1
-				},
+		    "outputname": "OnTimer",
+	            "targetname": "rtv_maker_*",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.3,
+	            "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "rtv_hurt_1*",
-					"inputname": "Enable",
-					"delay": 1.4,
-					"timestofire": -1
-				},
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_hurt_1*",
+		    "inputname": "Enable",
+		    "delay": 1.4,
+		    "timestofire": -1
+		},
 
                 {
                     "outputname": "OnTimer",
@@ -1653,45 +1653,45 @@
                 },
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "rtv_beam_kill_relay",
-					"inputname": "Trigger",
-					"delay": 2.1,
-					"timestofire": -1
-				}
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_beam_kill_relay",
+		    "inputname": "Trigger",
+		    "delay": 2.1,
+		    "timestofire": -1
+		}
             ]   
         },
 
         {
-			"targetname": "rtv_fys_a6_timer",
+	    "targetname": "rtv_fys_a6_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "4.0",
             "io":
-			[	
-				{
-					"outputname": "OnTimer",
-					"targetname": "st3_boss_a6_case",
-					"inputname": "PickRandom",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+	    [	
+		{
+		    "outputname": "OnTimer",
+		    "targetname": "st3_boss_a6_case",
+		    "inputname": "PickRandom",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "st3_boss_center_tele",
-					"inputname": "Teleport",
-					"delay": 0.2,
-					"timestofire": -1
-				},
+		    "outputname": "OnTimer",
+		    "targetname": "st3_boss_center_tele",
+		    "inputname": "Teleport",
+		    "delay": 0.2,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "st3_boss_a6_beam_timer",
-					"inputname": "Enable",
-					"delay": 3.5,
-					"timestofire": -1
-				}
+		    "outputname": "OnTimer",
+		    "targetname": "st3_boss_a6_beam_timer",
+		    "inputname": "Enable",
+		    "delay": 3.5,
+		    "timestofire": -1
+		}
             ]
         }
     ],
@@ -1699,7 +1699,7 @@
     [ 
         {
             "origin": "-5104.432 -11285.9 -11610.56",
-			"targetname": "rtv_ta_fly_maker",
+	    "targetname": "rtv_ta_fly_maker",
             "classname": "env_entity_maker",
             "entitytemplate": "st3_last_fly"
         }
@@ -1707,52 +1707,52 @@
     "add": // stage rtv fys teleport 
     [ 
         {
-			"targetname": "rtv_fys_af_tp",
+	    "targetname": "rtv_fys_af_tp",
             "classname": "trigger_teleport",
-		    "target": "rtv_fys_destination",
             "origin": "-5788 -10664 -11200",
             "angles": "0 0 0",
-		    "scales": "1 1 1",
-		    "spawnflags": "4097",
+	    "scales": "1 1 1",
+            "target": "rtv_fys_destination",
+	    "spawnflags": "4097",
             "startdisabled": "1",
             "filtername": "human",
             "model": "maps/ze_grau_p/entities/st3_boss_az_zm_teleport_2_1142.vmdl"
         },
 
         {
-			"targetname": "rtv_fys_af_tp_zm",
+	    "targetname": "rtv_fys_af_tp_zm",
             "classname": "trigger_teleport",
-		    "target": "rtv_fys_destination_zm",
             "origin": "-5712 -10732 -8916",
             "angles": "0 0 0",
-		    "scales": "1 1 1",
-		    "spawnflags": "4097",
+	    "scales": "1 1 1",
+            "target": "rtv_fys_destination_zm",
+	    "spawnflags": "4097",
             "startdisabled": "1",
             "filtername": "zm",
             "model": "maps/ze_grau_p/entities/st3_boss_az_zm_teleport_1_1140.vmdl"
         },
   
         {
-			"targetname": "rtv_fys_destination",
+	    "targetname": "rtv_fys_destination",
             "classname": "info_teleport_destination",
-		    "origin": "11445 13560 -2500",
+	    "origin": "11445 13560 -2500",
             "angles": "0 0 0"
         },
 
         {
-			"targetname": "rtv_fys_destination_zm",
+	    "targetname": "rtv_fys_destination_zm",
             "classname": "info_teleport_destination",
-		    "origin": "11530 10735 -2500",
+	    "origin": "11530 10735 -2500",
             "angles": "0 180 0"
         }
     ],                  
     "add": // change stage rtv fys music info worldtext
     [ 
         {
-			"targetname": "text_music_fys_relay",
+	    "targetname": "text_music_fys_relay",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "world_text_credit_MUSIC1",
@@ -2093,10 +2093,10 @@
         {
             "targetname": "admin_rtv_a",
             "classname": "func_button",
-		    "origin": "500 140 -2016",
+	    "origin": "500 140 -2016",
             "angles": "0 0 0",
             "scales": "1 1 1",
-			"fadescale": "1",
+	    "fadescale": "1",
             "spawnflags": "1025",
             "wait": "3",
             "speed": "5",
@@ -2104,7 +2104,7 @@
             "renderamt": "255",
             "model": "maps/ze_grau_p/entities/admin_rtv_4092.vmdl",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnPressed",
                     "targetname": "levelcounter",
@@ -2133,7 +2133,7 @@
             "origin": "500 185 -1980",
             "angles": "0 270 90",
             "scales": "1 1 1",
-			"depth_render_offset": "0.125",
+	    "depth_render_offset": "0.125",
             "font_name": "Unispace",
             "font_size": "128",
             "world_units_per_pixel": "0.25",
@@ -2141,7 +2141,7 @@
             "fullbright": "1",
             "enabled": "1",
             "message": "RTV A",
-		    "fademindist": "-1",
+	    "fademindist": "-1",
             "rendercolor": "255 255 255",
             "renderamt": "255",
             "rendermode": "kRenderNormal",
@@ -2151,10 +2151,10 @@
     "add": // stage rtv a teleport trigger
     [ 
         {
-			"targetname": "admin_a",
+	    "targetname": "admin_a",
             "classname": "logic_relay",
             "io":
-			[            
+	    [            
                 {
                     "outputname": "OnTrigger",
                     "targetname": "text_music_a_relay",
@@ -2260,16 +2260,16 @@
                     "delay": 19.0,
                     "timestofire": -1
                 }
-			]
+	    ]
         }
     ],
     "add": // stage rtv a
     [ 
         {
-			"targetname": "rtv_a_trigger",
+	    "targetname": "rtv_a_trigger",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "rtv_a_bgm",
@@ -4341,13 +4341,13 @@
     "add": // stage rtv a/z custom attack
     [ 
         {
-			"targetname": "rtv_a_boss_a8_rot_default_timer",
+	    "targetname": "rtv_a_boss_a8_rot_default_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "0.01",
             "io":
-			[	
-				{
+	    [	
+		{
                     "outputname": "OnTimer",
                     "targetname": "st3_boss_a8_rot1*",
                     "inputname": "SetSpeed",
@@ -4368,10 +4368,10 @@
         },
 
         {
-			"targetname": "rtv_z_a9_start",
+	    "targetname": "rtv_z_a9_start",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "st3_boss_a9_move_side",
@@ -4512,35 +4512,35 @@
     "add": // stage rtv a custom attack
     [ 
         {
-			"targetname": "rtv_a_beam_timer",
+	    "targetname": "rtv_a_beam_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
             "refiretime": "1.51",
             "io":
-			[	
-				{
-					"outputname": "OnTimer",
-					"targetname": "rtv_maker_*",
-					"inputname": "ForceSpawn",
-					"delay": 0.09,
-					"timestofire": -1
-				},
+	    [	
+		{
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_maker_*",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.09,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "rtv_maker_*",
-					"inputname": "ForceSpawn",
-					"delay": 0.38,
-					"timestofire": -1
-				},
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_maker_*",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.38,
+		    "timestofire": -1
+		},
 
                 {
-					"outputname": "OnTimer",
-					"targetname": "rtv_maker_*",
-					"inputname": "ForceSpawn",
-					"delay": 0.76,
-					"timestofire": -1
-				},
+		    "outputname": "OnTimer",
+		    "targetname": "rtv_maker_*",
+		    "inputname": "ForceSpawn",
+		    "delay": 0.76,
+		    "timestofire": -1
+		},
                 
                 {
                     "outputname": "OnTimer",
@@ -4581,10 +4581,10 @@
     "add": // change stage rtv a music info worldtext
     [ 
         {
-			"targetname": "text_music_a_relay",
+	    "targetname": "text_music_a_relay",
             "classname": "logic_relay",
             "io":
-			[
+	    [
                 {
                     "outputname": "OnTrigger",
                     "targetname": "world_text_credit_MUSIC1",
@@ -4947,47 +4947,47 @@
             ]
         }
     ],		
-	"add": // stage rtv a time text
+    "add": // stage rtv a time text
     [ 
         {
-			"depth_render_offset": "0.125",
-			"reorient_mode": "1",
+	    "depth_render_offset": "0.125",
+	    "reorient_mode": "1",
             "justify_vertical": "1",
-			"justify_horizontal": "1",
+	    "justify_horizontal": "1",
             "font_name": "Arial Black",
-		    "font_size": "255",
+	    "font_size": "255",
             "world_units_per_pixel": "0.25",
-			"fullbright": "1",
-			"enabled": "0",
-			"fademindist": "-1",
-			"rendercolor": "255 255 255",
-			"renderamt": "255",
-			"rendermode": "kRenderNormal",
-			"renderfx": "kRenderFxNone",
-		    "message": "N:NA",
-		    "targetname": "rtv_timer",
-			"classname": "point_worldtext",
-		    "origin": "-5785 -10765 -10950",
-			"angles": "0 0 90",
-			"color": "255 255 255",
-			"scales": "2 2 2"
-		}
-	],
+	    "fullbright": "1",
+	    "enabled": "0",
+	    "fademindist": "-1",
+	    "rendercolor": "255 255 255",
+	    "renderamt": "255",
+	    "rendermode": "kRenderNormal",
+	    "renderfx": "kRenderFxNone",
+	    "message": "N:NA",
+	    "targetname": "rtv_timer",
+	    "classname": "point_worldtext",
+	    "origin": "-5785 -10765 -10950",
+	    "angles": "0 0 90",
+	    "color": "255 255 255",
+	    "scales": "2 2 2"
+	}
+    ],
 	"add": // stage rtv a/z text time timer
     [ 
         {
-		    "targetname": "rtv_timer_a",
-			"classname": "logic_relay",
-			"io":
-			[
-			    {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_timer",
-					"inputname": "SetMessage",
-					"overrideparam": "2:15",
-					"delay": 0.0,
-					"timestofire": -1
-				},
+	    "targetname": "rtv_timer_a",
+	    "classname": "logic_relay",
+	    "io":
+	    [
+		{
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_timer",
+		    "inputname": "SetMessage",
+		    "overrideparam": "2:15",
+		    "delay": 0.0,
+		    "timestofire": -1
+		},
 
 				{
 					"outputname": "OnTrigger",
