@@ -27,7 +27,7 @@
 	    }        
 	}
     ],
-    "modify": // add extra stage
+    "modify": // add stage rtv extra
     [ 
         {
             "match":
@@ -100,7 +100,7 @@
             ]
         }
     ],
-    "add": // extra stage disable healshot 
+    "add": // stage rtv extra disable healshot 
     [
         {
             "targetname": "disable_healshot",
@@ -119,7 +119,7 @@
             ]
         }
     ],
-    "add": // stage extra health
+    "add": // stage rtv extra health
     [ 
         {
 	    "targetname": "rtv_hp_trigger",
@@ -127,9 +127,9 @@
             "origin": "-5744 -10776 -11200",
             "angles": "0 0 0",
             "scales": "1 1 1",
-            "spawnflags": "4097",
-            "startdisabled": "1",
             "filtername": "human",
+            "spawnflags": "4097",
+            "startdisabled": "1",       
             "model": "maps/ze_grau_p/entities/st3_boss_vida_counttrigger_1093.vmdl"   
         }
     ],            
