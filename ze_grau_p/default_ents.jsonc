@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.01.19
+// stripper by 兎RB 25.02.10
 // map ze_grau_p
 // workshop id 3246171131
 // have to add music,soundvents in server pack(vpk)
@@ -1692,10 +1692,8 @@
 		    "timestofire": -1
 		}
             ]
-        }
-    ],
-    "add":
-    [ 
+        },
+
         {
             "origin": "-5104.432 -11285.9 -11610.56",
 	    "targetname": "rtv_ta_fly_maker",
@@ -1735,14 +1733,16 @@
 	    "targetname": "rtv_fys_destination",
             "classname": "info_teleport_destination",
 	    "origin": "11445 13560 -2500",
-            "angles": "0 0 0"
+            "angles": "0 0 0",
+            "scales": "1 1 1"
         },
 
         {
 	    "targetname": "rtv_fys_destination_zm",
             "classname": "info_teleport_destination",
 	    "origin": "11530 10735 -2500",
-            "angles": "0 180 0"
+            "angles": "0 180 0",
+            "scales": "1 1 1"
         }
     ],                  
     "add": // change stage rtv fys music info worldtext
@@ -4972,7 +4972,7 @@
 	    "scales": "2 2 2"
 	}
     ],
-	"add": // stage rtv a/z text time timer
+    "add": // stage rtv a/z text time timer
     [ 
         {
 	    "targetname": "rtv_timer_a",
@@ -4989,39 +4989,39 @@
 		},
 
 		{
-					"outputname": "OnTrigger",
-					"targetname": "rtv_timer",
-					"inputname": "SetMessage",
-					"overrideparam": "2:14",
-					"delay": 1.0,
-					"timestofire": -1
+	            "outputname": "OnTrigger",
+		    "targetname": "rtv_timer",
+		    "inputname": "SetMessage",
+		    "overrideparam": "2:14",
+		    "delay": 1.0,
+		    "timestofire": -1
 		},
 
 		{
-					"outputname": "OnTrigger",
-					"targetname": "rtv_timer",
-					"inputname": "SetMessage",
-					"overrideparam": "2:13",
-					"delay": 2.0,
-					"timestofire": -1
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_timer",
+		    "inputname": "SetMessage",
+		    "overrideparam": "2:13",
+		    "delay": 2.0,
+		    "timestofire": -1
 		},
 
 		{
-					"outputname": "OnTrigger",
-					"targetname": "rtv_timer",
-					"inputname": "SetMessage",
-					"overrideparam": "2:12",
-					"delay": 3.0,
-					"timestofire": -1
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_timer",
+		    "inputname": "SetMessage",
+	            "overrideparam": "2:12",
+		    "delay": 3.0,
+		    "timestofire": -1
 		},
 
 		{
-					"outputname": "OnTrigger",
-					"targetname": "rtv_timer",
-					"inputname": "SetMessage",
-					"overrideparam": "2:11",
-					"delay": 4.0,
-					"timestofire": -1
+		    "outputname": "OnTrigger",
+		    "targetname": "rtv_timer",
+		    "inputname": "SetMessage",
+		    "overrideparam": "2:11",
+		    "delay": 4.0,
+		    "timestofire": -1
 		},
 
 		{
