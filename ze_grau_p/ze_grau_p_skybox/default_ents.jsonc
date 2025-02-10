@@ -2,7 +2,7 @@
 // map ze_grau_p
 // workshop id 3246171131
 {
-	"modify": // change max value 4 >> 7
+    "modify": // change max value 4 >> 7
     [ 
         {
             "match":
