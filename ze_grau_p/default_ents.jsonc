@@ -2111,7 +2111,7 @@
                 }
             ]    
         },
-        // stage rtv a wolrdtext 
+        // stage rtv a worldtext 
         {
             "targetname": "world_text_admin_a",
             "classname": "point_worldtext",
@@ -7628,7 +7628,7 @@
 	    "color": "255 255 255",
 	    "scales": "2 2 2"
 	},
-
+        // stage rtv a/z text time timer
         {
 	    "targetname": "rtv_timer_a",
 	    "classname": "logic_relay",
@@ -8869,7 +8869,7 @@
 	    ]
 	}
     ],
-    "add": 
+    "add": // music
     [
         // music stage rtv fys
         {
