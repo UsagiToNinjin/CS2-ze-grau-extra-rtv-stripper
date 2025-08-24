@@ -2224,14 +2224,6 @@
 
                 {
                     "outputname": "OnTrigger",
-                    "targetname": "music_player",
-                    "inputname": "Enable",
-                    "delay": 1.0,
-                    "timestofire": -1
-                },
-
-                {
-                    "outputname": "OnTrigger",
                     "targetname": "rtv_a_trigger",
                     "inputname": "Trigger",
                     "delay": 19.0,
@@ -8835,3 +8827,4 @@
         }
     ]
 }
+
