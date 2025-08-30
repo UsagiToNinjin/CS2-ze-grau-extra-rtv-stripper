@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.08.24
+// stripper by 兎RB 25.08.30
 // map ze_grau_p
 // workshop id 3246171131
 // extra stage only admin
@@ -18,7 +18,7 @@
 						"outputname": "OnMapSpawn",
 						"targetname": "sc",
                         "inputname": "Command",
-                        "overrideparam": "say stripper update 25.08.24",
+                        "overrideparam": "say stripper update 25.08.30",
                         "delay": 1.0,
                         "timestofire": -1
 					}
@@ -70,7 +70,7 @@
 			}
 		}
     ],
-    "add": // 373#entityLumpName(st3_boss_a8_temp) maxspeed set default value
+    "add": // st3_boss_a8_temp(373#entityLumpName) maxspeed set default value
     [
         {
 			"targetname": "boss_a8_rot_default_timer",
@@ -3560,10 +3560,19 @@
 
                 {
                     "outputname": "OnTrigger",
-                    "targetname": "st3_boss_a7_smoke",
+                    "targetname": "st3_boss_smoke",
                     "inputname": "SetParent",
                     "overrideparam": "",
                     "delay": 73.28,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "st3_boss_smoke",
+                    "inputname": "SetControlPoint",
+                    "overrideparam": "2: 254 150 0",
+                    "delay": 73.29,
                     "timestofire": -1
                 },
 
@@ -5748,6 +5757,15 @@
 
                 {
                     "outputname": "OnTrigger",
+                    "targetname": "st3_boss_smoke",
+                    "inputname": "SetControlPoint",
+                    "overrideparam": "2: 254 150 0",
+                    "delay": 51.27,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
                     "targetname": "st3_boss_center_tele",
                     "inputname": "Teleport",
                     "delay": 51.27,
@@ -6838,8 +6856,8 @@
                 {
 					"outputname": "OnCase01",
 					"targetname": "st3_boss_smoke",
-					"inputname": "StartSize",
-                    "overrideparam": "1",
+					"inputname": "SetControlPoint",
+                    "overrideparam": "2: 1 150 0",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -6881,8 +6899,8 @@
                 {
 					"outputname": "OnCase02",
 					"targetname": "st3_boss_smoke",
-					"inputname": "StartSize",
-                    "overrideparam": "1",
+					"inputname": "SetControlPoint",
+                    "overrideparam": "2: 1 150 0",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -6924,8 +6942,8 @@
                 {
 					"outputname": "OnCase03",
 					"targetname": "st3_boss_smoke",
-					"inputname": "StartSize",
-                    "overrideparam": "1",
+					"inputname": "SetControlPoint",
+                    "overrideparam": "2: 1 150 0",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -6967,8 +6985,8 @@
                 {
 					"outputname": "OnCase04",
 					"targetname": "st3_boss_smoke",
-					"inputname": "StartSize",
-                    "overrideparam": "1",
+					"inputname": "SetControlPoint",
+                    "overrideparam": "2: 1 150 0",
 					"delay": 0.0,
 					"timestofire": -1
 				},
@@ -8827,4 +8845,3 @@
         }
     ]
 }
-
