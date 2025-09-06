@@ -1,4 +1,4 @@
-// stripper by 兎RB 25.08.30
+// stripper by 兎RB 25.09.07
 // map ze_grau_p
 // workshop id 3246171131
 // extra stage only admin
@@ -18,7 +18,7 @@
 						"outputname": "OnMapSpawn",
 						"targetname": "sc",
                         "inputname": "Command",
-                        "overrideparam": "say stripper update 25.08.30",
+                        "overrideparam": "say stripper update 25.09.07",
                         "delay": 1.0,
                         "timestofire": -1
 					}
@@ -4562,7 +4562,7 @@
                     "outputname": "OnTimer",
                     "targetname": "rtv_beam_1*",
                     "inputname": "SetControlPoint",
-                    "overrideparam": "2:120 35 0",
+                    "overrideparam": "2:40 35 0",
                     "delay": 1.36,
                     "timestofire": -1
                 },
@@ -8845,3 +8845,4 @@
         }
     ]
 }
+
