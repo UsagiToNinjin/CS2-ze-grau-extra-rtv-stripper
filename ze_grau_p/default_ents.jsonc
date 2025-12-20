@@ -1,31 +1,8 @@
-// stripper by 兎RB 25.11.20
+// stripper by 兎RB 25.12.20
 // map ze_grau_p
 // workshop id 3246171131
 // extra stage only admin
 {
-	"modify": // stripper update log
-    [
-        {
-            "match":
-            {
-                "classname": "logic_auto"
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-						"outputname": "OnMapSpawn",
-						"targetname": "sc",
-                        "inputname": "Command",
-                        "overrideparam": "say stripper update 25.11.20",
-                        "delay": 1.0,
-                        "timestofire": -1
-					}
-				]
-			}
-		}
-    ],
     "modify": // add stage rtv extra
     [
         {
@@ -70,8 +47,9 @@
 			}
 		}
     ],
-    "add": // st3_boss_a8_temp(373#entityLumpName) maxspeed set default value
-    [
+    "add":
+    [   
+        // st3_boss_a8_temp(373#entityLumpName) maxspeed set default value
         {
 			"targetname": "boss_a8_rot_default_timer",
             "classname": "logic_timer",
@@ -97,10 +75,8 @@
                     "timestofire": -1
                 }
             ]
-        }
-    ],
-    "add": // stage rtv extra disable healshot
-    [
+        },
+        // stage rtv extra disable healshot
         {
             "targetname": "disable_healshot",
             "classname": "logic_timer",
@@ -116,10 +92,8 @@
                     "timestofire": -1
                 }
             ]
-        }
-    ],
-    "add": // stage rtv extra health
-    [
+        },
+        // stage rtv extra health trigger
         {
 			"targetname": "rtv_hp_trigger",
             "classname": "trigger_multiple",
@@ -169,7 +143,7 @@
                 }
             ]
         },
-        // stage rtv fys worldtext
+        
         {
             "targetname": "world_text_admin_fys",
             "classname": "point_worldtext",
@@ -273,6 +247,14 @@
                     "outputname": "OnTrigger",
                     "targetname": "rtv_fys_bgm",
                     "inputname": "StartSound",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "st3_boss_crot_ran_timer",
+                    "inputname": "Enable",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -1727,7 +1709,7 @@
             "angles": "0 180 0",
             "scales": "1 1 1"
         },
-        // change stage rtv fys music info worldtext
+        
         {
 			"targetname": "text_music_fys_relay",
             "classname": "logic_relay",
@@ -2105,7 +2087,7 @@
                 }
             ]
         },
-        // stage rtv a worldtext
+        
         {
             "targetname": "world_text_admin_a",
             "classname": "point_worldtext",
@@ -2233,6 +2215,14 @@
                     "outputname": "OnTrigger",
                     "targetname": "rtv_a_bgm",
                     "inputname": "StartSound",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "st3_boss_crot_ran_timer",
+                    "inputname": "Enable",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -4595,7 +4585,7 @@
                 }
             ]
         },
-        // change stage rtv a music info worldtext
+        
         {
 			"targetname": "text_music_a_relay",
             "classname": "logic_relay",
@@ -5000,7 +4990,7 @@
                 }
             ]
         },
-        // stage rtv z worldtext
+        
         {
             "targetname": "world_text_admin_z",
             "classname": "point_worldtext",
@@ -5144,6 +5134,14 @@
                     "outputname": "OnTrigger",
                     "targetname": "rtv_z_bgm",
                     "inputname": "StartSound",
+                    "delay": 0.0,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "st3_boss_crot_ran_timer",
+                    "inputname": "Enable",
                     "delay": 0.0,
                     "timestofire": -1
                 },
@@ -7181,7 +7179,7 @@
             "duration": "1",
             "spawnflags": "1"
         },
-        // change stage rtv z music info worldtext
+        
         {
 			"targetname": "text_music_z_relay",
             "classname": "logic_relay",
