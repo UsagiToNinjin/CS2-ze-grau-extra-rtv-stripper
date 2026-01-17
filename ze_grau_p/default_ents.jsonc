@@ -1,7 +1,6 @@
-// stripper by 兎RB 25.12.20
+// stripper by 兎RB 26.01.17
 // map ze_grau_p
 // workshop id 3246171131
-// extra stage only admin
 {
     "modify": // add stage rtv extra
     [
@@ -42,6 +41,26 @@
                         "inputname": "Trigger",
                         "delay": 0.0,
                         "timestofire": -1
+					}
+				]
+			}
+		},
+
+        {
+            "match":
+            {
+                "targetname": "[PR#]rtv_trigger"
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+						"outputname": "OnTrigger",
+						"targetname": "rtv_extra_level",
+                        "inputname": "FireUser1",
+                        "delay": 126.0,
+                        "timestofire": 1
 					}
 				]
 			}
@@ -90,6 +109,97 @@
                     "inputname": "Kill",
                     "delay": 0.0,
                     "timestofire": -1
+                }
+            ]
+        },
+        // stage rtv extra level trigger
+        {
+			"targetname": "rtv_extra_level",
+            "classname": "trigger_once",
+            "origin": "-5744 -10776 -11200",
+            "angles": "0 0 0",
+            "scales": "1 1 1",
+            "filtername": "human",
+            "spawnflags": "4097",
+            "startdisabled": "1",
+            "model": "maps/ze_grau_p/entities/st3_boss_vida_counttrigger_1093.vmdl",
+            "io":
+            [
+                {
+                    "outputname": "OnUser1",
+                    "targetname": "!self",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>5>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser1",
+                    "targetname": "!self",
+                    "inputname": "Enable",
+                    "delay": 0.1,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser2",
+                    "targetname": "!self",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>6>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser2",
+                    "targetname": "!self",
+                    "inputname": "KeyValue",
+                    "overrideparam": "origin 11528 13578 -800",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser2",
+                    "targetname": "!self",
+                    "inputname": "Enable",
+                    "delay": 0.1,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser3",
+                    "targetname": "!self",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>7>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser3",
+                    "targetname": "!self",
+                    "inputname": "Enable",
+                    "delay": 0.1,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser4",
+                    "targetname": "!self",
+                    "inputname": "AddOutPut",
+                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>1>0>1",
+                    "delay": 0.0,
+                    "timestofire": 1
+                },
+
+                {
+                    "outputname": "OnUser4",
+                    "targetname": "!self",
+                    "inputname": "Enable",
+                    "delay": 0.1,
+                    "timestofire": 1
                 }
             ]
         },
@@ -1581,6 +1691,14 @@
 					"inputname": "Disable",
 					"delay": 238.9,
 					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnTrigger",
+					"targetname": "rtv_extra_level",
+                    "inputname": "FireUser2",
+                    "delay": 238.9,
+                    "timestofire": 1
 				}
             ]
         },
@@ -4346,7 +4464,15 @@
                     "inputname": "Disable",
                     "delay": 136.2,
                     "timestofire": -1
-                }
+                },
+
+                {
+					"outputname": "OnTrigger",
+					"targetname": "rtv_extra_level",
+                    "inputname": "FireUser3",
+                    "delay": 136.2,
+                    "timestofire": 1
+				}
             ]
         },
         // stage rtv a/z custom attack
@@ -6381,8 +6507,16 @@
 
                 {
                     "outputname": "OnTrigger",
-                    "targetname": "st3_boss_a8_rot*",
-                    "inputname": "StartBackward",
+                    "targetname": "rtv_z_boss_a8_rot_default_timer",
+                    "inputname": "Disable",
+                    "delay": 121.72,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "rtv_z_boss_a8_rot_default_r_timer",
+                    "inputname": "Enable",
                     "delay": 121.72,
                     "timestofire": -1
                 },
@@ -6549,7 +6683,15 @@
                     "inputname": "Disable",
                     "delay": 135.78,
                     "timestofire": -1
-                }
+                },
+
+                {
+					"outputname": "OnTrigger",
+					"targetname": "rtv_extra_level",
+                    "inputname": "FireUser4",
+                    "delay": 135.78,
+                    "timestofire": 1
+				}
             ]
         },
         // stage rtv z custom attack
@@ -6565,6 +6707,24 @@
                     "targetname": "st3_boss_a8_rot*",
                     "inputname": "SetSpeed",
                     "overrideparam": "0.55",
+                    "delay": 0.0,
+                    "timestofire": -1
+                }
+            ]
+        },
+
+        {
+			"targetname": "rtv_z_boss_a8_rot_default_r_timer",
+            "classname": "logic_timer",
+            "startdisabled": "1",
+            "refiretime": "0.01",
+            "io":
+			[
+				{
+                    "outputname": "OnTimer",
+                    "targetname": "st3_boss_a8_rot*",
+                    "inputname": "SetSpeed",
+                    "overrideparam": "-0.55",
                     "delay": 0.0,
                     "timestofire": -1
                 }
