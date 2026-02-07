@@ -55,7 +55,7 @@
         {
             "targetname": "rtv_point_1&0000",
             "classname": "info_target",
-            "origin": "2400 0 0",
+            "origin": "2350 0 0",
             "angles": "0 0 0",
             "scales": "1 1 1",
             "parentname": "rtv_laser_1&0000"
