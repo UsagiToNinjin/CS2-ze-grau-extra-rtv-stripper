@@ -1,4 +1,4 @@
-// stripper by 兎RB 26.01.17
+// stripper by 兎RB 26.02.07
 // map ze_grau_p
 // workshop id 3246171131
 {
@@ -41,26 +41,6 @@
                         "inputname": "Trigger",
                         "delay": 0.0,
                         "timestofire": -1
-					}
-				]
-			}
-		},
-
-        {
-            "match":
-            {
-                "targetname": "[PR#]rtv_trigger"
-            },
-            "insert":
-            {
-                "io":
-                [
-                    {
-						"outputname": "OnTrigger",
-						"targetname": "rtv_extra_level",
-                        "inputname": "FireUser1",
-                        "delay": 126.0,
-                        "timestofire": 1
 					}
 				]
 			}
@@ -112,97 +92,6 @@
                 }
             ]
         },
-        // stage rtv extra level trigger
-        {
-			"targetname": "rtv_extra_level",
-            "classname": "trigger_once",
-            "origin": "-5744 -10776 -11200",
-            "angles": "0 0 0",
-            "scales": "1 1 1",
-            "filtername": "human",
-            "spawnflags": "4097",
-            "startdisabled": "1",
-            "model": "maps/ze_grau_p/entities/st3_boss_vida_counttrigger_1093.vmdl",
-            "io":
-            [
-                {
-                    "outputname": "OnUser1",
-                    "targetname": "!self",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>5>0>1",
-                    "delay": 0.0,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser1",
-                    "targetname": "!self",
-                    "inputname": "Enable",
-                    "delay": 0.1,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser2",
-                    "targetname": "!self",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>6>0>1",
-                    "delay": 0.0,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser2",
-                    "targetname": "!self",
-                    "inputname": "KeyValue",
-                    "overrideparam": "origin 11528 13578 -800",
-                    "delay": 0.0,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser2",
-                    "targetname": "!self",
-                    "inputname": "Enable",
-                    "delay": 0.1,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser3",
-                    "targetname": "!self",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>7>0>1",
-                    "delay": 0.0,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser3",
-                    "targetname": "!self",
-                    "inputname": "Enable",
-                    "delay": 0.1,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser4",
-                    "targetname": "!self",
-                    "inputname": "AddOutPut",
-                    "overrideparam": "OnStartTouch>levelcounter>SetValueNoFire>1>0>1",
-                    "delay": 0.0,
-                    "timestofire": 1
-                },
-
-                {
-                    "outputname": "OnUser4",
-                    "targetname": "!self",
-                    "inputname": "Enable",
-                    "delay": 0.1,
-                    "timestofire": 1
-                }
-            ]
-        },
         // stage rtv extra health trigger
         {
 			"targetname": "rtv_hp_trigger",
@@ -231,6 +120,8 @@
             "fademindist": "-1",
             "rendercolor": "255,255,255",
             "renderamt": "255",
+            "rendermode": "kRenderNormal",
+			"renderfx": "kRenderFxNone",
             "model": "maps/ze_grau_p/entities/admin_rtv_4092.vmdl",
             "io":
 			[
@@ -1691,14 +1582,6 @@
 					"inputname": "Disable",
 					"delay": 238.9,
 					"timestofire": -1
-				},
-
-                {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_extra_level",
-                    "inputname": "FireUser2",
-                    "delay": 238.9,
-                    "timestofire": 1
 				}
             ]
         },
@@ -2183,6 +2066,8 @@
             "fademindist": "-1",
             "rendercolor": "255,255,255",
             "renderamt": "255",
+            "rendermode": "kRenderNormal",
+			"renderfx": "kRenderFxNone",
             "model": "maps/ze_grau_p/entities/admin_rtv_4092.vmdl",
             "io":
 			[
@@ -3542,6 +3427,22 @@
 
                 {
                     "outputname": "OnTrigger",
+                    "targetname": "rtv_a_beam_color_timer",
+                    "inputname": "Enable",
+                    "delay": 49.48,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "rtv_a_beam_color_timer",
+                    "inputname": "Disable",
+                    "delay": 61.58,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
                     "targetname": "rtv_a_beam_timer",
                     "inputname": "Enable",
                     "delay": 47.67,
@@ -3950,6 +3851,22 @@
                     "targetname": "st3_boss_a5_case",
                     "inputname": "PickRandom",
                     "delay": 80.85,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "rtv_a_beam_color_timer",
+                    "inputname": "Enable",
+                    "delay": 109.68,
+                    "timestofire": -1
+                },
+
+                {
+                    "outputname": "OnTrigger",
+                    "targetname": "rtv_a_beam_color_timer",
+                    "inputname": "Disable",
+                    "delay": 121.7,
                     "timestofire": -1
                 },
 
@@ -4464,15 +4381,7 @@
                     "inputname": "Disable",
                     "delay": 136.2,
                     "timestofire": -1
-                },
-
-                {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_extra_level",
-                    "inputname": "FireUser3",
-                    "delay": 136.2,
-                    "timestofire": 1
-				}
+                }
             ]
         },
         // stage rtv a/z custom attack
@@ -4646,6 +4555,49 @@
         },
         // stage rtv a custom attack
         {
+			"targetname": "rtv_a_beam_color_timer",
+            "classname": "logic_timer",
+            "startdisabled": "1",
+            "refiretime": "0.2",
+            "io":
+			[
+                {
+					"outputname": "OnTimer",
+					"targetname": "rtv_beam_1*",
+					"inputname": "DestroyImmediately",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnTimer",
+					"targetname": "rtv_laser_1*",
+					"inputname": "TurnOn",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+				{
+					"outputname": "OnTimer",
+					"targetname": "rtv_laser_1*",
+					"inputname": "Color",
+                    "overrideparam": "255 0 0",
+					"delay": 0.0,
+					"timestofire": -1
+				},
+
+                {
+					"outputname": "OnTimer",
+					"targetname": "rtv_laser_1*",
+					"inputname": "Color",
+                    "overrideparam": "0 0 255",
+					"delay": 0.1,
+					"timestofire": -1
+				}
+            ]
+        },
+
+        {
 			"targetname": "rtv_a_beam_timer",
             "classname": "logic_timer",
             "startdisabled": "1",
@@ -4678,9 +4630,9 @@
 
                 {
                     "outputname": "OnTimer",
-                    "targetname": "rtv_beam_1*",
-                    "inputname": "SetControlPoint",
-                    "overrideparam": "2:40 35 0",
+                    "targetname": "rtv_laser_1*",
+                    "inputname": "Width",
+                    "overrideparam": "40",
                     "delay": 1.36,
                     "timestofire": -1
                 },
@@ -4706,7 +4658,7 @@
                     "outputname": "OnTimer",
                     "targetname": "rtv_beam_kill_relay",
                     "inputname": "Trigger",
-                    "delay": 1.5,
+                    "delay": 1.46,
                     "timestofire": -1
                 }
             ]
@@ -5094,6 +5046,8 @@
             "fademindist": "-1",
             "rendercolor": "255,255,255",
             "renderamt": "255",
+            "rendermode": "kRenderNormal",
+			"renderfx": "kRenderFxNone",
             "model": "maps/ze_grau_p/entities/admin_rtv_4092.vmdl",
             "io":
 			[
@@ -6683,15 +6637,7 @@
                     "inputname": "Disable",
                     "delay": 135.78,
                     "timestofire": -1
-                },
-
-                {
-					"outputname": "OnTrigger",
-					"targetname": "rtv_extra_level",
-                    "inputname": "FireUser4",
-                    "delay": 135.78,
-                    "timestofire": 1
-				}
+                }
             ]
         },
         // stage rtv z custom attack
