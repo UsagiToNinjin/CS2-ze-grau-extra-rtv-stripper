@@ -1,0 +1,60 @@
+// stripper by 兎RB 26.09.09
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+    "modify":
+    [
+        // change to unlock
+        {
+            "match":
+            {
+                "targetname": "[PR#]admin_purple_d",
+                "classname": "func_button"
+            },
+            "replace":
+            {
+                "spawnflags": "1057"
+            }
+        },
+        // show chat log
+        {
+            "match":
+            {
+                "targetname": "[PR#]escape_red_relay",
+                "classname": "logic_relay"
+            },
+            "insert":
+            {
+                "io":
+                [
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "win_d",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnStartTouch>server>Command>say *** Enable Stage Purple D ***>0.0>-1",
+                        "delay": 119.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "win_d",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnStartTouch>server>Command>say *** Enable Stage Purple D ***>1.0>-1",
+                        "delay": 119.0,
+                        "timestofire": -1
+                    },
+
+                    {
+                        "outputname": "OnTrigger",
+                        "targetname": "win_d",
+                        "inputname": "AddOutPut",
+                        "overrideparam": "OnStartTouch>server>Command>say *** Enable Stage Purple D ***>2.0>-1",
+                        "delay": 119.0,
+                        "timestofire": -1
+                    }
+                ]
+            }        
+        }
+    ]
+}

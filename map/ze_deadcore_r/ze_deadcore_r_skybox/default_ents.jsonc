@@ -1,0 +1,19 @@
+// stripper by 兎RB 26.09.09
+// map ze_deadcore_r
+// workshop id 3331345627
+{
+    "modify": // enable stage Purple D
+    [
+        {
+            "match":
+            {
+                "targetname": "[PR#]extra_counter",
+                "classname": "math_counter"
+            },
+            "replace":
+            {
+                "max": "3"
+            }
+        }
+    ]
+}
